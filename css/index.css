@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+}
+body{
+    background-image: url('../images/backcover.svg');
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-size: 70%;
+}
+nav{
+    display: flex;
+    padding: 2rem 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fa-bars{
+    display: none !important;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    color: blue;
+}
+.signin-btn{
+    padding: 0.4rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+}
+.intro-section{
+    margin: auto;
+    display: flex;
+    padding: 0 4rem 0 10rem;
+    
+}
+.left-section{
+    padding-top: 3rem;
+    
+}
+
+h1{
+    padding: 1rem 0;
+    color: blue;
+    font-size: 4rem;
+}
+h4{
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    line-height: 30px;
+    color: rgb(106, 106, 250);
+}
+.learn-more-btn{
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    background-color: slateblue;
+    color: white;
+    border: none;
+    outline: none;
+}
+.imgs-div{
+    
+}
+
+@media (max-width:1200px) {
+    .imgs-div img:nth-child(3){
+        width:500px
+    }
+    .intro-section {
+        
+        padding: 0 1rem 0 8rem;
+    }
+}
+@media (max-width:900px) {
+    
+    .left-section h1{
+        font-size: 40px;
+    }
+    .imgs-div img:nth-child(3){
+        width:200px
+    }
+    body{
+        background-size: cover;
+    }
+    .intro-section {    
+        padding: 0 1rem 0 4rem;
+    }
+    
+}
+
+@media (max-width:767px) {
+    .nav-items{
+        display: none;
+     }
+     .fa-bars{
+        display: block !important;
+    }
+     nav{
+        justify-content: space-between;
+        padding: 2rem ;
+     }
+     .intro-section {    
+        padding: 0 1rem 0 2rem;
+     }
+     .btn-container{
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .intro-section{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
